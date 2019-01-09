@@ -122,7 +122,7 @@ select 'Completed', count(*) from migration.control_load
 where start_ts is not null and end_ts is not null and load_process_id is not null
 union all
 select 'Running', count(*) from migration.control_load 
-where start_ts is not null and end_ts is null and and load_process_id is not null
+where start_ts is not null and end_ts is null and load_process_id is not null
 ```
 * Logs
 ```bash
