@@ -16,12 +16,12 @@ db2 -v "create table MIGRATION.CONTROL_LOAD (
    target_tabschema varchar(128) not null,
    target_tabname   varchar(128) not null,
    end_ts           timestamp, 
-   rows_read        integer, 
-   rows_skipped     integer, 
-   rows_loaded      integer, 
-   rows_rejected    integer, 
-   rows_deleted     integer, 
-   rows_committed   integer, 
+   rows_read        bigint, 
+   rows_skipped     bigint, 
+   rows_loaded      bigint, 
+   rows_rejected    bigint, 
+   rows_deleted     bigint, 
+   rows_committed   bigint, 
    load_process_id  smallint )
 in <tablespace_name>"  
 
